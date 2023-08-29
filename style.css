@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    box-shadow: #d0d0d0 0 0 1rem;
+    padding: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    height: 100%;
+}
+
+#slots-wrapper {
+    min-width: 15vw;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.slot-wrapper {
+    flex-grow: 1;
+    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+}
+
+.number {
+    display: grid;
+    align-items: center;
+}
+
+.number p {
+    text-align: right;
+}
+
+.slot {
+    box-shadow: #d0d0d0 0 0 0.2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color ease 200ms;
+}
+
+.slot:hover {
+    background-color: hsl(210, 100%, 90%);
+}
+
+.slot.occupied {
+    background-color: dodgerblue;
+}
+
+.slot p {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+#random-wrapper {
+    display: grid;
+    place-items: center;
+}
+
+#random-blob {
+    background-color: dodgerblue;
+    padding: 1rem;
+    min-width: 20vw;
+    border-radius: 1rem;
+}
+
+#random-blob p {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}

@@ -2,9 +2,9 @@ const wrapperEl = document.getElementById("slots-wrapper");
 const randomP = document.querySelector("#random-blob p");
 
 const numRange = 1000;
-const slotCount = 10;
+const slotCount = 25;
 
-const placeHolder = "#";
+const placeHolder = "###";
 
 let randomNum;
 
